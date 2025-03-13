@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isthi Tarot - Magie & Spiritualitate</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        body {
+            font-family: 'Marcellus', serif;
+            background-color: #1a1a1a;
+            color: #d4af37;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('https://source.unsplash.com/1600x900/?tarot,magic') no-repeat center;
+            background-size: cover;
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .language-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .language-switch button {
+            background: #7b4397;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .language-switch button:hover {
+            background: #dc2430;
+        }
+
+        section {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .service-item {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        .service-item h3 {
+            color: #d4af37;
+        }
+
+        .price {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #7b4397, #dc2430);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .contact-button:hover {
+            background: linear-gradient(45deg, #dc2430, #7b4397);
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Isthi Tarot 🔮</h1>
+        <p id="tagline">Magie. Claritate. Transformare.</p>
+        <div class="language-switch">
+            <button onclick="switchLanguage()">🌍 RO / EN</button>
+        </div>
+    </header>
+
+    <section>
+        <h2 id="services-title">✨ Servicii oferite ✨</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <h3 id="service1-title">🔮 Citire Tarot (30 min)</h3>
+                <p id="service1-desc">Răspunsuri pentru viața ta.</p>
+                <p class="price">150 RON | 33 EUR</p>
+            </div>
+            <div class="service-item">
+                <h3 id="service2-title">🌌 Matrix Chart</h3>
+                <p id="service2-desc">Analiză astrologică completă.</p>
+                <p class="price">200 RON | 44 EUR</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <a href="https://www.instagram.com/isthistarot/" class="contact-button" target="_blank">📩 Contact pe Instagram</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Isthi Tarot - Toate drepturile rezervate</p>
+    </
